@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+ 
+    @IBOutlet weak var txtFieldUserName: UITextField!
+    @IBOutlet weak var txtFieldPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        txtFieldUserName.textContentType = .username
+        txtFieldPassword.textContentType = .password
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +25,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btnSubmit(_ sender: Any) {
+        
+    }
 }
 
