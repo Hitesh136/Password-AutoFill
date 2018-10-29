@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A20BD3021871C12007C19AF /* Password AutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Password AutoFill.entitlements"; sourceTree = "<group>"; };
 		4AD48DFC2186E60800F74418 /* Password AutoFill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password AutoFill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD48DFF2186E60800F74418 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AD48E012186E60800F74418 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		4AD48DFE2186E60800F74418 /* Password AutoFill */ = {
 			isa = PBXGroup;
 			children = (
+				4A20BD3021871C12007C19AF /* Password AutoFill.entitlements */,
 				4AD48DFF2186E60800F74418 /* AppDelegate.swift */,
 				4AD48E012186E60800F74418 /* ViewController.swift */,
 				4AD48E032186E60800F74418 /* Main.storyboard */,
@@ -97,6 +99,11 @@
 					4AD48DFB2186E60800F74418 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,11 +281,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Password AutoFill/Password AutoFill.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8HBL5W4VV;
 				INFOPLIST_FILE = "Password AutoFill/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.finoit.HAPassword-AutoFill.Password-AutoFill";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.HAPasswordAutoFill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,11 +297,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Password AutoFill/Password AutoFill.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8HBL5W4VV;
 				INFOPLIST_FILE = "Password AutoFill/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.finoit.HAPassword-AutoFill.Password-AutoFill";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.HAPasswordAutoFill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
